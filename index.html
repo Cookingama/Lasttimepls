@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+<div class="sidebar">
+    <h1>Cooking Ama</h1>
+    <ul>
+        <li><a href="index.html">Home<img src="https://img.icons8.com/pastel-glyph/128/000000/home.png"/></a></li>
+        <li><a href="download.html">Download<img src="https://img.icons8.com/material-sharp/24/000000/exe.png"/></a></li>
+        <li><a href="merchandise.html">Merchandise<img src="https://img.icons8.com/ios/50/000000/market-square.png"/></a></li>
+    </ul>
+</div>
+
+<div class="main">
+    <div class="header">
+        <h2>
+            Introduction
+        </h2>
+    </div>
+
+    <div class="content">
+        <div class="section1">
+        <div class="txt1">
+            <h4>
+            Cooking Ama is a visual novel game, that incorporates baking tips with a tragic story. This game includes the basic functions of Ren'Py, an interactive map, and the use of an inventory.
+            The theme of this visual novel revolves around the bakery, it will give you the experience of creating your baked goods.
+            <h4>
+        </div>
+        <div class="img1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Ren%E2%80%99Py_Logo_6-13-6_200x307px.png" alt="renpyicon">
+        </div>
+        <div class="txt2">
+            <h4>
+            Frankie is a child who was abandoned by his parents. Luckily for Frankie, he was left in the hands of a well-known bakery store owner. He now has a new start to her life being an apprentice of a baker.
+            </h4>
+        </div>
+        </div>
+
+        <script>
+            var i = 0;
+            var images = [];
+            var time = 5000;
+
+            images[0] = "https://i.pinimg.com/564x/16/43/2a/16432a78a7d792357251ead4b7cfc651.jpg";
+            images[1] = "https://i.pinimg.com/564x/1c/e0/b4/1ce0b46b53883de554cc55e3b2b7720a.jpg";
+            images[2] = "https://i.pinimg.com/564x/d6/1a/44/d61a443b817ecb13a2bef00f0fe71023.jpg";
+
+            function changeImg(){
+                document.slide.src=images[i];
+                if( i < images.length - 1){
+                    i++;
+                }
+                else{
+                    i = 0
+                }
+
+                setTimeout("changeImg()", time);
+            }
+
+            window.onload = changeImg;
+        </script>
+        <div class="section2">
+        <center><img name="slide" width="800" height="450"></center>
+        <center><h4>samples of our in-game images<h4></center>
+        </div>
+    </div>
+    <footer>
+    <div class="footer">
+        <a href="https://www.facebook.com/ama.cooking.7"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png"></a>
+        <a href="https://www.instagram.com/ama_cooking_frankie/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"></a>
+        <h5>You can check out our social media!</h5>
+    </div>
+    </footer>
+</div>
+</div>
+
+</body>
+</html>

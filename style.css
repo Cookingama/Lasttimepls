@@ -1,0 +1,140 @@
+body{
+  margin: 0px; padding: 0px;
+  background-color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+.wrapper{
+  display: flex;
+  position: relative;
+}
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.wrapper .sidebar{
+  width: 200px; height: 100%;
+  position: fixed;
+  background-color: black;
+}
+.wrapper .sidebar h1{
+  text-align: center;
+  margin: 30px 0px;
+  color: white; font-family: 'Dancing Script', cursive;
+}
+.wrapper .sidebar ul li{
+  padding: 30px;
+}
+.wrapper .sidebar ul li:hover{
+  background-color: white;
+}
+.wrapper .sidebar ul li a{
+  color: white;
+}
+.wrapper .sidebar ul li:hover a{
+    color: black;
+}
+
+.wrapper .sidebar ul li img{
+  width: 35px;
+  padding-left: 10px;
+}
+
+.wrapper .main{
+  width: 100%;
+  margin-left: 200px;
+  font-family: 'Lora', serif;
+}
+.wrapper .main .header{
+  padding: 35px;
+  text-align: center;
+}
+.wrapper .main .header h2{
+  font-size: 50px;
+}
+
+.wrapper .main .content .section1{
+  font-size: 25px; line-height: 1.5;
+  display: flex;
+}
+.wrapper .main .content .section1 .txt1{
+  margin: 50px 0px 50px 50px;
+}
+.wrapper .main .content .section1 .img1{
+  margin: auto 25px auto 10px;
+}
+.wrapper .main .content .section1 .txt2{
+  margin: 50px 50px 50px 0px;
+}
+.wrapper .main footer .footer img{
+  padding: 10px;
+  float: right;
+  height: 50px;
+}
+.wrapper .main footer .footer h5{
+  float: right;
+  width: 125px;
+  padding-top: 8px;
+}
+
+.wrapper .main .content .row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.wrapper .main .content .row .item{
+ width: 304px;
+ font-size: 20px;
+ line-height: 1.5;
+}
+.wrapper .main .content .row .item img{
+  height: 300px;
+  width: 300px;
+  padding: 25px
+}
+.wrapper .main .content .row .item h4{
+  padding: 25px;
+}
+.wrapper .main .content .row .item a img{
+  border: 0;
+  float: right;
+  height: 100px;
+  width: 100px;
+}
+
+.wrapper .main .content .download{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+}
+.wrapper .main .content .download img{
+  height: 200px;
+}
+.wrapper .main .content .instruction{
+  font-size: 25px;
+  line-height: 1.5;
+  padding: 5%;
+}
+.wrapper .main .content .instruction h5{
+  text-indent: 30px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.wrapper .main .content .instruction div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+div.footer {
+  text-align: right;
+}
+
+iframe{
+  margin-bottom: 5%;
+}
